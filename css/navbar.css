@@ -1,0 +1,107 @@
+.top-bar{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.top-bar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    background: #017DC3;
+    box-shadow: 0 3px 7px 2px rgb(0 0 0 / 20%);
+}
+
+.navbar{
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.top-bar-logo{
+    float: left;
+    margin: 10px 8px 8px 30px;
+}
+
+.menu{
+    float: right;
+    display: flex;
+}
+
+.navigate{
+    padding: 15px;
+}
+
+.navigate a{
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1.4px solid white;
+    border-radius: 5px;
+}
+
+.navigate button{
+    background-color: #017DC3;
+    color: #fff;
+    font-family: arial;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1.4px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigate a:hover, .navigate button:hover{
+    opacity: 0.8;
+}
+
+@keyframes logout{
+    from{transform: translateX(0px);}
+    50%{transform: translateX(6px);}
+    to{transform: translateX(0px);}
+}
+
+.logout{
+    width: 50px;
+    margin: 10px 40px 8px 0;
+}
+
+.logout:hover{
+    animation-name: logout;
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+.top-bar-title h1{
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family:Rockwell;
+    color: white;
+}
+
+.bottom-bar{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 4px grey;
+    background: #017DC3;
+}
+
+.bottom-bar-wrap{
+    position: relative; 
+    left: 0 ; right: 0; bottom: 0; 
+    height:17px;
+}
+
+.bottom-bar-title h1 {
+    margin: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    color: white;
+}

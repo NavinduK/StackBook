@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    include('./components/loginprocess.php');
+    //check whether user already logged, redirect to home if logged
+	if(isset($_SESSION['uid'])){
+	    	header("location: index.php");
+	}
+ ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -11,14 +20,10 @@
         <div class="login">
 
             <div class="loginpic margin-top">
-                <img alt="login">
-                <div style="width: 300px; text-align:center; margin-top:10px">
-                    <p>Not Registered?</p>
-                    <a style="margin-top:10px" href="register.php">Register Here</a>
-                </div>
+                <img src="img/login.png" alt="login">
             </div>
             <!-- member login form -->
-            <form method="POST" action="loginprocess.php" name="loginform" class="loginform">
+            <form method="POST" name="loginform" class="loginform">
                 <h2 class="logintitle margin-top">Member Login</h2>
 
                 <div class="inputbox">

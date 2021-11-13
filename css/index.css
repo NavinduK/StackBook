@@ -1,0 +1,81 @@
+body {
+    background: #f3f3f3;
+    font-family: open sans, droid arabic kufi, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 8px;
+    background: none;
+}
+
+.marginA {
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading {
+    color: #fff;
+    padding: 120px 0 60px 0;
+    background: #017dc3;
+}
+
+.heading p {
+    margin: 20px 0 0 0;
+}
+
+.heading h4 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.mainbody {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    position: relative;
+    height: 100%;
+    padding-bottom: 60px;
+    min-height: 100vh !important;
+}
+
+.hr{
+    margin-top: 30px;
+}
+
+b {
+    color: rgb(9, 8, 77);
+}
+
+.ask-btn {
+    width: 170px;
+    height: 45px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    background: #fff;
+    color: #017dc3;
+    font-size: 19px;
+    border: none;
+}
+
+.ask-btn:hover {
+    background: #cddee8;
+    cursor: pointer;
+}
+
