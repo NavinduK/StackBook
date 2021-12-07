@@ -21,9 +21,14 @@
 
             <div class="loginpic margin-top">
                 <img src="img/login.png" alt="login">
+                <div style="width: 300px; text-align:center; margin-top:10px">
+                    <p>Are you already a member?</p>
+                    <a style="margin-top:10px" href="login.php">Login</a>
+                </div>
             </div>
             <!-- Member registration form -->
             <form method="POST" name="regform" class="loginform">
+
                 <h2 class="logintitle">Member Register</h2>
                 <div class="inputbox">
                     <input class="input" type="text" name="firstName" placeholder="First Name">
@@ -36,6 +41,14 @@
                 </div>
                 <div class="inputbox">
                     <input class="input" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="errormsg">
+                    <?php
+                    //Display the proper error if any error occured
+                        if (isset($errors) && !empty($errors)) {
+                            echo $errors;
+                        }
+                    ?>
                 </div>
                 <div class="btnarea">
                     <button name="submit" class="loginbtn">Register Now<button>
