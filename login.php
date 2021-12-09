@@ -3,6 +3,10 @@
     include('./components/loginprocess.php');
     //check whether user already logged, redirect to home if logged
 	if(isset($_SESSION['uid'])){
+        if(isset($_GET['pid'])){
+            $pid = $_GET['pid'];
+		    header("location: question.php?pid=".$pid);
+        }else
 	    	header("location: index.php");
 	}
  ?>
